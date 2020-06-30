@@ -6,7 +6,7 @@
 /*   By: tnakamur <tnakamur@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/25 20:44:48 by tnakamur          #+#    #+#             */
-/*   Updated: 2020/06/29 16:27:11 by tnakamur         ###   ########.fr       */
+/*   Updated: 2020/06/30 16:48:43 by tnakamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,6 @@
 ** {
 ** 	return (c + n);
 ** }
-*/
-
-/*
-** if (*f) is null , returns O ?
 */
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
