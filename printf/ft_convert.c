@@ -6,10 +6,11 @@
 /*   By: tnakamur <tnakamur@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/16 23:30:28 by tnakamur          #+#    #+#             */
-/*   Updated: 2020/07/26 15:49:24 by tnakamur         ###   ########.fr       */
+/*   Updated: 2020/07/27 19:54:17 by tnakamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft/libft.h"
 #include "ft_printf.h"
 
 static long		digit(unsigned long n)
