@@ -6,7 +6,7 @@
 /*   By: tnakamur <tnakamur@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/24 12:18:01 by tnakamur          #+#    #+#             */
-/*   Updated: 2020/06/28 00:13:43 by tnakamur         ###   ########.fr       */
+/*   Updated: 2021/05/08 22:12:12 by tnakamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	unsigned char *dst2;
-	unsigned char *src2;
+	unsigned char	*dst2;
+	unsigned char	*src2;
 
 	dst2 = (unsigned char *)dst;
 	src2 = (unsigned char *)src;

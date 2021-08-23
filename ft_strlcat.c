@@ -6,7 +6,7 @@
 /*   By: tnakamur <tnakamur@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 19:40:32 by tnakamur          #+#    #+#             */
-/*   Updated: 2020/06/23 20:47:21 by tnakamur         ###   ########.fr       */
+/*   Updated: 2021/05/08 22:09:00 by tnakamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 {
-	size_t j;
-	size_t i;
-	size_t k;
+	size_t	j;
+	size_t	i;
+	size_t	k;
 
 	i = 0;
 	j = 0;

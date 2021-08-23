@@ -6,7 +6,7 @@
 /*   By: tnakamur <tnakamur@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 21:06:05 by tnakamur          #+#    #+#             */
-/*   Updated: 2020/06/24 16:56:36 by tnakamur         ###   ########.fr       */
+/*   Updated: 2021/05/08 22:08:04 by tnakamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(const char *s1)
 	i = 0;
 	while (s1[i])
 		i++;
-	dst = (char*)malloc((i + 1) * sizeof(char));
+	dst = (char *)malloc((i + 1) * sizeof(char));
 	if (!dst)
 		return (NULL);
 	i = 0;

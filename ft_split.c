@@ -6,7 +6,7 @@
 /*   By: tnakamur <tnakamur@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/24 21:50:29 by tnakamur          #+#    #+#             */
-/*   Updated: 2020/06/29 02:31:14 by tnakamur         ###   ########.fr       */
+/*   Updated: 2021/05/09 10:55:36 by tnakamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static char	**mem_free(char **tab)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	i = 0;
 	while (tab[i])
@@ -28,8 +28,8 @@ static char	**mem_free(char **tab)
 
 static int	cnt_words(char const *s, char c)
 {
-	int i;
-	int cnt;
+	int	i;
+	int	cnt;
 
 	i = 0;
 	cnt = 0;
@@ -42,7 +42,7 @@ static int	cnt_words(char const *s, char c)
 	return (cnt);
 }
 
-char		**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**str;
 	int		bgn;
@@ -51,21 +51,21 @@ char		**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	if (!(str = (char **)malloc(sizeof(char *) * (cnt_words(s, c) + 1))))
+	str = (char **)malloc(sizeof(char *) * (cnt_words(s, c) + 1));
+	if (!str)
 		return (NULL);
-	i = 0;
+	i = -1;
 	j = 0;
-	while (s[i])
+	while (s[++i])
 	{
 		if ((s[i] != c && i == 0) || (s[i] != c && s[i - 1] == c))
 			bgn = i;
 		if (s[i] != c && (s[i + 1] == '\0' || s[i + 1] == c))
 		{
-			if (!(str[j] = ft_substr(s, bgn, (size_t)(i - bgn + 1))))
+			str[j++] = ft_substr(s, bgn, (size_t)(i - bgn + 1));
+			if (str[j - 1] == NULL)
 				return (mem_free(str));
-			j++;
 		}
-		i++;
 	}
 	str[j] = 0;
 	return (str);

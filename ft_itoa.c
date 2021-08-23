@@ -6,7 +6,7 @@
 /*   By: tnakamur <tnakamur@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/25 21:41:30 by tnakamur          #+#    #+#             */
-/*   Updated: 2020/06/29 22:49:55 by tnakamur         ###   ########.fr       */
+/*   Updated: 2021/05/08 22:24:28 by tnakamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static long	digit(long n)
 {
-	long cnt;
+	long	cnt;
 
 	cnt = 1;
 	while (n > 9)
@@ -25,7 +25,7 @@ static long	digit(long n)
 	return (cnt);
 }
 
-char		*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	int			i;
 	long		nb;
@@ -35,15 +35,15 @@ char		*ft_itoa(int n)
 	nb = n;
 	if (nb < 0)
 		nb *= -1;
-	if (!(str = (char *)malloc(sizeof(char) * (digit(nb) + 1))))
+	str = (char *)malloc(sizeof(char) * (digit(nb) + 1));
+	if (!str)
 		return (0);
 	i = digit(nb) - 1;
 	str[digit(nb)] = '\0';
 	while (i >= 0)
 	{
-		str[i] = (nb % 10) + '0';
+		str[i--] = (nb % 10) + '0';
 		nb /= 10;
-		i--;
 	}
 	if (n < 0)
 	{

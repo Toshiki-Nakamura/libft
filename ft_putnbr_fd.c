@@ -6,7 +6,7 @@
 /*   By: tnakamur <tnakamur@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/25 17:43:25 by tnakamur          #+#    #+#             */
-/*   Updated: 2020/06/25 17:47:57 by tnakamur         ###   ########.fr       */
+/*   Updated: 2021/05/08 22:15:21 by tnakamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned int nbr;
+	unsigned int	nbr;
 
 	if (n == INT_MIN)
 	{
