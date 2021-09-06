@@ -1,2 +1,2 @@
 # Reimplementing Libc
-Support for normnette v3.2.8
+Support for normnette v3.3.2
